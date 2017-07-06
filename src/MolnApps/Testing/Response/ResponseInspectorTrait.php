@@ -419,6 +419,7 @@ trait ResponseInspectorTrait
 
 	protected function dd()
 	{
-		die($this->getResponseInspector()->dump());
+		$this->dump();
+		die();
 	}
 }
