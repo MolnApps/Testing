@@ -9,10 +9,10 @@
     ],
     "minimum-stability": "stable",
     "require": {
+        "gajus/dindent": "^2.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "5.4.*",
-        "gajus/dindent": "^2.0"
+        "phpunit/phpunit": "5.4.*"
     },
     "autoload": {
         "psr-4": {
