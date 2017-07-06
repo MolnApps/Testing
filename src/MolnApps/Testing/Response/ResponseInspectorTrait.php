@@ -5,7 +5,7 @@ namespace MolnApps\Testing\Response;
 use \MolnApps\Testing\Response\ResponseInspector as ConcreteResponseInspector;
 use \MolnApps\Testing\Router\Router;
 
-trait ResponseInspector
+trait ResponseInspectorTrait
 {
 	private $responseInspector;
 
