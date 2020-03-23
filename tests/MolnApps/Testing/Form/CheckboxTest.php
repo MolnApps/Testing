@@ -4,11 +4,11 @@ namespace MolnApps\Testing\Form;
 
 use \MolnApps\Testing\Response\Html\DomNodeFactory;
 
-class CheckboxTest extends \PHPUnit_Framework_TestCase
+class CheckboxTest extends \PHPUnit\Framework\TestCase
 {
 	private $checkboxElement;
 
-	protected function setUp()
+	protected function setUp() : void
 	{
 		$node = DomNodeFactory::createElement('input', [
 			'type' => 'checkbox', 'name' => 'agree', 'value' => 'agreenment'

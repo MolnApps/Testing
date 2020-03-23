@@ -6,7 +6,7 @@ use \MolnApps\Testing\Response\Html\DomNodeFactory;
 
 use \MolnApps\Testing\Router\Router;
 
-class FormRequestBuilderTest extends \PHPUnit_Framework_TestCase
+class FormRequestBuilderTest extends \PHPUnit\Framework\TestCase
 {
 	/** @test */
 	public function it_creates_a_request_array()

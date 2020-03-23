@@ -2,15 +2,15 @@
 
 namespace MolnApps\Testing\Form;
 
-use \PHPUnit_Framework_TestCase;
+use \PHPUnit\Framework\TestCase;
 
 use \MolnApps\Testing\Response\Html\DomNodeFactory;
 
-class FileTest extends PHPUnit_Framework_TestCase
+class FileTest extends \PHPUnit\Framework\TestCase
 {
 	private $fileElement;
 
-	protected function setUp()
+	protected function setUp() : void
 	{
 		$node = DomNodeFactory::createElement('input', [
 			'type' => 'file', 

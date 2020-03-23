@@ -5,7 +5,7 @@ namespace MolnApps\Testing\Request;
 use \MolnApps\Testing\Response\Html\DomNodeFactory;
 use \MolnApps\Testing\Router\Router;
 
-class LinkRequestBuilderTest extends \PHPUnit_Framework_TestCase
+class LinkRequestBuilderTest extends \PHPUnit\Framework\TestCase
 {
 	/** @test */
 	public function it_creates_a_request_array()

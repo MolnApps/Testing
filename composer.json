@@ -12,11 +12,12 @@
         "gajus/dindent": "^2.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "5.4.*"
+        "phpunit/phpunit": "^9.0"
     },
     "autoload": {
         "psr-4": {
-            "MolnApps\\": "src/MolnApps/"
+            "MolnApps\\": "src/MolnApps/",
+            "MolnApps\\Testing\\": "tests/MolnApps/Testing/"
         }
     },
     "autoload-dev": {

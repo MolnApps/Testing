@@ -2,12 +2,13 @@
 
 namespace MolnApps\Testing\Form;
 
-class InputNameTest extends \PHPUnit_Framework_TestCase
+class InputNameTest extends \PHPUnit\Framework\TestCase
 {
 	/** @test */
 	public function it_can_be_instantiated()
 	{
 		$instance = new InputName('lastName');
+		$this->assertNotNull($instance);
 	}
 
 	/** @test */

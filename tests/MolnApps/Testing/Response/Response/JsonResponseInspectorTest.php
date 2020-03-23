@@ -3,18 +3,18 @@
 use \MolnApps\Testing\Response\JsonResponseInspector;
 use \MolnApps\Testing\Response\Controller;
 
-class JsonResponseInspectorTest extends PHPUnit_Framework_TestCase
+class JsonResponseInspectorTest extends \PHPUnit\Framework\TestCase
 {
 	private $controller;
 	private $inspector;
 
-	protected function setUp()
+	protected function setUp() : void
 	{
 		$this->controller = $this->getMockBuilder(Controller::class)->setMethods(['run', 'bootApplication', 'shutdownApplication', 'signedInAs', 'signedOut'])->getMock();
 		$this->inspector = new JsonResponseInspector($this->controller);
 	}
 
-	protected function tearDown()
+	protected function tearDown() : void
 	{
 		//Mockery::close();
 	}

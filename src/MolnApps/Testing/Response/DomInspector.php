@@ -220,6 +220,8 @@ class DomInspector
 				$attributes = array_merge($selectorAttributes, $this->attributes);
 				throw new \Exception($this->getExceptionMessage($attributes));
 			}
+
+			\PHPUnit\Framework\Assert::assertTrue(true);
 		}
 
 		return $this;

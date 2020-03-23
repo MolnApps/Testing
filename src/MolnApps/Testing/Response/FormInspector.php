@@ -201,6 +201,8 @@ class FormInspector
 			throw new \Exception('Could not find '.$this->currentElementName);
 		}
 
+		\PHPUnit\Framework\Assert::assertTrue(true);
+
 		return $this;
 	}
 
@@ -211,6 +213,8 @@ class FormInspector
 		if ($element) {
 			throw new \Exception('Element '.$this->currentElementName.' was found.');
 		}
+
+		\PHPUnit\Framework\Assert::assertTrue(true);
 
 		return $this;
 	}

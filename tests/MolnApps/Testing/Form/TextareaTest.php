@@ -4,11 +4,11 @@ namespace MolnApps\Testing\Form;
 
 use \MolnApps\Testing\Response\Html\DomNodeFactory;
 
-class TextareaTest extends \PHPUnit_Framework_TestCase
+class TextareaTest extends \PHPUnit\Framework\TestCase
 {
 	private $textareaElement;
 
-	protected function setUp()
+	protected function setUp() : void
 	{
 		$node = DomNodeFactory::createElement('textarea', [
 			'name' => 'description', 'text' => 'Lorem ipsum dolor sit amet',

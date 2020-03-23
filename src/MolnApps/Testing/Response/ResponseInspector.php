@@ -158,6 +158,8 @@ class ResponseInspector
             }
         }
 
+        \PHPUnit\Framework\Assert::assertTrue(true);
+
         return $this;
     }
 

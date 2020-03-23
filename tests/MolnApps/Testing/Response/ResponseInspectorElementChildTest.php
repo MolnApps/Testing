@@ -2,12 +2,14 @@
 
 namespace MolnApps\Testing\Response;
 
+use \MolnApps\Testing\TestCase;
+
 use \MolnApps\Testing\Response\Testing\ControllerStub;
 use \MolnApps\Testing\Router\Router;
 
-class ResponseInspectorElementChildTest extends \PHPUnit_Framework_TestCase
+class ResponseInspectorElementChildTest extends TestCase
 {
-	protected function setUp()
+	protected function setUp() : void
 	{
 		$this->response = '
 			<div class="contents">

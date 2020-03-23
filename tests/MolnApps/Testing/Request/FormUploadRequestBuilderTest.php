@@ -6,7 +6,7 @@ use \MolnApps\Testing\Response\Html\DomNodeFactory;
 
 use \MolnApps\Testing\Request\FormUploadRequestBuilder;
 
-class FormUploadRequestBuilderTest extends \PHPUnit_Framework_TestCase
+class FormUploadRequestBuilderTest extends \PHPUnit\Framework\TestCase
 {
 	/** @test */
 	public function it_will_submit_file_inputs()

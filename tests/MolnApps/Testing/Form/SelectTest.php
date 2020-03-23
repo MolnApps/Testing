@@ -4,9 +4,9 @@ namespace MolnApps\Testing\Form;
 
 use \MolnApps\Testing\Response\Html\DomNodeFactory;
 
-class SelectTest extends \PHPUnit_Framework_TestCase
+class SelectTest extends \PHPUnit\Framework\TestCase
 {
-	protected function setUp()
+	protected function setUp() : void
 	{
 		$this->select = DomNodeFactory::createElement('select', ['name' => 'country']);
 		

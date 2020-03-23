@@ -4,11 +4,11 @@ namespace MolnApps\Testing\Form;
 
 use \MolnApps\Testing\Response\Html\DomNodeFactory;
 
-class InputTest extends \PHPUnit_Framework_TestCase
+class InputTest extends \PHPUnit\Framework\TestCase
 {
 	private $inputElement;
 
-	protected function setUp()
+	protected function setUp() : void
 	{
 		$node =  DomNodeFactory::createElement('input', [
 			'type' => 'text', 

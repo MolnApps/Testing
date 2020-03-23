@@ -2,10 +2,12 @@
 
 namespace MolnApps\Testing\Response;
 
+use \MolnApps\Testing\TestCase;
+
 use \MolnApps\Testing\Response\Testing\ControllerStub;
 use \MolnApps\Testing\Router\Router;
 
-class ResponseInspectorTest extends \PHPUnit_Framework_TestCase
+class ResponseInspectorTest extends TestCase
 {
 	/** @before */
 	protected function setUpInstance()

@@ -2,12 +2,14 @@
 
 namespace MolnApps\Testing\Response;
 
+use \MolnApps\Testing\TestCase;
+
 use \MolnApps\Testing\Response\Testing\ControllerStub;
 use \MolnApps\Testing\Router\Router;
 
-class ResponseInspectorFormTest extends \PHPUnit_Framework_TestCase
+class ResponseInspectorFormTest extends TestCase
 {
-	protected function setUp()
+	protected function setUp() : void
 	{
 		$this->instance = new ResponseInspector(new ControllerStub, new Router);
 	}
