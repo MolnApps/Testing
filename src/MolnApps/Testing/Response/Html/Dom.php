@@ -7,7 +7,7 @@ class Dom
 	private $domParser;
 	private $attributes = [];
 
-	public function __construct($markup = null, DomParser $domParser = null)
+	public function __construct($markup = null, DomParser|null $domParser = null)
 	{
 		$this->domParser = ($domParser) ?: new OldDomParser;
 		$this->load($markup);

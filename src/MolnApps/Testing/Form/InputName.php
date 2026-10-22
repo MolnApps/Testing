@@ -6,17 +6,17 @@ class InputName
 {
 	private $name;
 
-	public function __construct($inputName)
+	public function __construct(string $inputName)
 	{
 		$this->name = $inputName;
 	}
 
-	public static function make($inputName)
+	public static function make(string $inputName)
 	{
 		return new static($inputName);
 	}
 
-	public function getName()
+	public function getName() : string
 	{
 		return $this->name;
 	}

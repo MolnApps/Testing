@@ -10,6 +10,7 @@ class FormInspector
 {
 	private $formElement;
 	private $currentElementName;
+	private array $elements = [];
 
 	public function __construct(Node $formElement)
 	{

@@ -7,7 +7,7 @@ class OldDomParser implements DomParser
 	private $domDocument;
 	private $domElement;
 
-	public function __construct(\DomDocument $domDocument = null, \DomElement $domElement = null)
+	public function __construct(\DomDocument|null $domDocument = null, \DomElement|null $domElement = null)
 	{
 		$this->domDocument = ($domDocument) ?: new \DomDocument;
 		$this->domDocument->preserveWhiteSpace = false;

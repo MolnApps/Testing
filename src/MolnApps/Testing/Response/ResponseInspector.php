@@ -22,6 +22,7 @@ class ResponseInspector
     private $formUploadRequestBuilder;
 
     private $domInspector;
+    private $linkRequestBuilder;
 
     public function __construct(Controller $controller, RouterInterface $router)
     {
