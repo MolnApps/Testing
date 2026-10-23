@@ -13,7 +13,7 @@ abstract class AbstractFormElement implements FormElement
 		$this->domElement = $domElement;
 	}
 
-	public function getName()
+	public function getName() : string
 	{
 		return $this->domElement->getAttribute('name');
 	}

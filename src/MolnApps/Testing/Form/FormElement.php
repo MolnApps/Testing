@@ -6,5 +6,5 @@ interface FormElement
 {
 	public function setValue($value);
 	public function getValue();
-	public function getName();
+	public function getName() : string;
 }
